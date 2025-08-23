@@ -6,9 +6,17 @@ Official repository for Exploring Probabilistic Modeling Beyond Domain Generaliz
 
 ## Updates
 - June 2025: ✨ PDAF was accepted into ICCV 2025!
-- Code will be released soon
 
 ## Inference
+Please prepare the dataset by referencing [RobustNet](https://github.com/shachoi/RobustNet) and set `dataset_root` in `config.py`. Download checkpoints from [Google drive](https://drive.google.com/file/d/1TF3XLQ8jSxA_uqvtODMR-VJ1S2mNGkPW/view?usp=sharing) and unzip it in folder `checkpoints`.
+```
+checkpoints/
+├── best-dcm-bdd100k.pt
+├── best-dpe-bdd100k.pt
+├── best-lpe-bdd100k.pt
+└── deeplab_res50.yaml
+```
+Run following command:
 ```
 bash demo.sh
 ```

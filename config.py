@@ -64,20 +64,20 @@ __C.REDUCE_BORDER_EPOCH = -1
 __C.STRICTBORDERCLASS = None
 
 
-root = ""
+dataset_root = ""
 #Attribute Dictionary for Dataset
 __C.DATASET = AttrDict()
 #Cityscapes Dir Location
-__C.DATASET.CITYSCAPES_DIR = f'{root}/Cityscape'
+__C.DATASET.CITYSCAPES_DIR = f'{dataset_root}/Cityscape'
 #SDC Augmented Cityscapes Dir Location
 __C.DATASET.CITYSCAPES_AUG_DIR = ''
 #Mapillary Dataset Dir Location
-__C.DATASET.MAPILLARY_DIR = f'{root}/Mapillary/2'
+__C.DATASET.MAPILLARY_DIR = f'{dataset_root}/Mapillary/2'
 #GTAV, BDD100K Dataset Dir Location
-__C.DATASET.GTAV_DIR = f'{root}/GTA'
-__C.DATASET.BDD_DIR = f'{root}/BDD100K'
+__C.DATASET.GTAV_DIR = f'{dataset_root}/GTA'
+__C.DATASET.BDD_DIR = f'{dataset_root}/BDD100K'
 #Synthia Dataset Dir Location
-__C.DATASET.SYNTHIA_DIR = f'{root}/Synthia/'
+__C.DATASET.SYNTHIA_DIR = f'{dataset_root}/Synthia/'
 #Kitti Dataset Dir Location
 __C.DATASET.KITTI_DIR = ''
 #SDC Augmented Kitti Dataset Dir Location

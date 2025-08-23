@@ -173,7 +173,7 @@ parser.add_argument('--val_dataset', nargs='*', type=str, default=['bdd100k'],
                     help='a list consists of cityscapes, mapillary, gtav, bdd100k, synthia')
 parser.add_argument('--train_batch_size', type=int, default=4, help='')
 parser.add_argument('--val_batch_size', type=int, default=4, help='')
-parser.add_argument('--scales', nargs='*', type=float, default=[1.0])
+parser.add_argument('--scales', nargs='*', type=float, default=[0.5, 0.75, 1.0, 1.25, 1.5])
 parser.add_argument('--vhflip', action='store_true', default=False, help='')
 
 args = parser.parse_args()
