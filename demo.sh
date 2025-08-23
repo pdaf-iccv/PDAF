@@ -1,10 +1,8 @@
 SOURCE=cityscapes
 TARGETS=(bdd100k)
-ROOT='/mnt/187/b/edd/workspace/RobustNet/exclude/all_runs/runs_iccv/ablation/city/stage-73_6'
+ROOT='./ckpt'
 HYP="${ROOT}/deeplab_res50.yaml"
 OUTPUT_DIR="outs"
-
-
 
 for TARGET in "${TARGETS[@]}"
 do

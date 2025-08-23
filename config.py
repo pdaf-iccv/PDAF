@@ -64,9 +64,7 @@ __C.REDUCE_BORDER_EPOCH = -1
 __C.STRICTBORDERCLASS = None
 
 
-origin_path = "/mnt/187/b/edd/Datasets/DG"
-new_path = "/mnt/201/b/mrchang87/DG"
-root = new_path
+root = ""
 #Attribute Dictionary for Dataset
 __C.DATASET = AttrDict()
 #Cityscapes Dir Location

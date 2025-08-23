@@ -7,6 +7,11 @@ Official repository for Exploring Probabilistic Modeling Beyond Domain Generaliz
 ## Updates
 - June 2025: ✨ PDAF was accepted into ICCV 2025!
 - Code will be released soon
+
+## Inference
+```
+bash demo.sh
+```
 ## License
 
 This project is based on RobustNet (https://github.com/shachoi/RobustNet), developed by Sungha Choi and licensed under the BSD 3-Clause License.
