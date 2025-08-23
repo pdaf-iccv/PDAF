@@ -1,0 +1,34 @@
+Task Model: "deeplabv3plus_resnet50"
+Learnable:
+  all # backbone or all
+Loss function:
+  feature loss: {
+  }
+  pred loss: {
+    mse: 0.5,
+    weighted_seg: 0.5,
+  }
+  diff loss: {
+    mse: 0.01
+  }
+LPE mode: map_v # channel, map, map_v
+PFN mode: naive # naive, dgm, add, concat
+Prior Layers: 
+  layer4: 
+    in_channels: 2048
+    n_feats: 4
+    n_encoder_res: 10
+    bn: True
+    addition: 0
+    ps: 0
+    
+Prior Insert Layers:
+  layer4:
+    out_channels: 2048
+
+DPE:
+  n_feats: 4
+  n_conds: 2048
+  n_denoise_res: 3
+  timesteps: 4
+  scale: 0.5
